@@ -9,6 +9,11 @@ body {
     width: 100vw; 
 }
 
+
+*{
+    box-sizing: border-box;
+}
+
 #container-1 {
     margin: 0 auto;
     padding: 20px;
@@ -51,6 +56,10 @@ nav {
     font-weight: 700;
 }
 
+.menu ul a:hover {
+    color: black;
+}
+
 .buttons {
     display: flex;
     flex-direction: row;
@@ -83,6 +92,15 @@ nav {
 .buttons input[value="Daftar"]{
     background-color: #22b252;
     color: #fff;
+}
+
+.buttons input[value="Masuk"]:hover {
+    background-color: #8bbe98;
+    color: #fbfbfb;
+}
+
+.buttons input[value="Daftar"]:hover{
+    background-color: #1d843f;
 }
 
 /* For mobile devices (max-width: 768px) */
@@ -126,4 +144,53 @@ nav {
     .buttons input {
         max-width: 120px;
     }
+}
+
+#container-2{
+    margin-top: 50px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.hero {
+    width: 500px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 15px; 
+    padding: 30px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+
+
+.hero h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #e6f6ea;
+    letter-spacing: 0.5px; 
+    margin-bottom: 10px; 
+}
+
+.hero p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.176px;
+    margin: 16px 0 0;
+    color: #e6f6ea;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
 }
