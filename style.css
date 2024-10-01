@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./assets/05dd6ec4f598845cea361cdf64ecbc9d.jpg);
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-size: cover; 
+    height: 100vh; 
+    width: 100vw; 
+}
+
+#container-1 {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.8); 
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    height: 56px;
+    margin: 0 200px;
+}
+
+.web-logo {
+    margin-right: 40px;
+}
+
+.web-logo img{
+    width: 180px;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px; 
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul a {
+    text-decoration: none;
+    color: #c5d3e0;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+}
+
+.buttons input {
+    font-style: normal;
+    font-family: "Nunito Sans", sans-serif;
+    outline: none;
+    width: 96px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    padding: 0 20px; 
+    height: 40px;
+    line-height: 20px; 
+    border-radius: 32px;
+    text-align: center; 
+    font-size: 16px; 
+    font-weight: 700; 
+    cursor: pointer;
+}
+
+.buttons input[value="Masuk"] {
+    background-color: #e6f6ea;
+    color: #22b252;
+}
+
+.buttons input[value="Daftar"]{
+    background-color: #22b252;
+    color: #fff;
+}
+
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 20px;
+        height: auto;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .buttons {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .buttons input {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .web-logo img {
+        width: 150px;
+    }
+}
+
+/* For tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    nav {
+        margin: 0 40px;
+    }
+
+    .buttons input {
+        max-width: 120px;
+    }
+}

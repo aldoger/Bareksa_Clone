@@ -1,1 +1,71 @@
-<h1>Geraldo</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bareksa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section id="container-1">
+        <nav>
+            <div class="web-logo">
+                <a href="">
+                    <img src="https://images.bareksa.com/logo/BareksaxGrab-header.svg" alt="">
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="">Produk</a></li>
+                    <li><a href="">Data</a></li>
+                    <li><a href="">Layanan</a></li>
+                    <li><a href="">Berita</a></li>
+                    <li><a href="">Promo</a></li>
+                    <li><a href="">Perusahaan</a></li>
+                </ul>
+            </div>
+            <div class="buttons">
+                <input  type="button" value="Masuk">
+                <input type="button" value="Daftar">
+            </div>
+        </nav>
+    </section>
+    <section>
+        <main>
+            <div>
+                <h1>Satu Aplikasi Beragam Investasi #AmanPastiBisa</h1>
+                <p>Dapatkan Kemudahan mengelola semua aset investasi dalam satu genggaman. Di Bareksa, investasi semudah belanja online!</p>
+            </div>
+            <div>
+                <form action="">
+                    <label>Pilih Reksa Dana Anda</label>
+                    <select name="jenis_reksa_dana" id="jenisReksaDana">
+                        <option value="Pasar_Uang">Reksa dana Pasar Uang</option>
+                        <option value="Tetap">Reksa dana Pendapatan Tetap</option>
+                        <option value="Campuran">Reksa dana Campuran</option>
+                        <option value="Saham">Reksa dana Saham</option>
+                    </select>
+                    <select name="kategori" id="kategori">
+                        <option value="Terbuka">Reksa dana Terbuka</option>
+                        <option value="Tertutup">Reksa dana terutup</option>
+                    </select>
+                    <div>
+                        <input type="text" value="Return(%)">
+                        <div>
+                            <ul>
+                                <li><input type="button" value="1YR"></li>
+                                <li><input type="button" value="2YR"></li>
+                                <li><input type="button" value="3YR"></li>
+                                <li><input type="button" value="5YR"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </section>
+</body>
+</html>
